@@ -1023,7 +1023,7 @@ img {
   width: 360px;
   border-radius: 0.5rem;
   justify-self: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .design__img-poke:hover {
