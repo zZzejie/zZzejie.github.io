@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================== UNICONS =================== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- ================== SWIPER CSS =================== -->
+    <link rel="stylesheet" href="" />
+
+    <!-- ================== CSS =================== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Zejie's Portofolio</title>
+  </head>
+  <body>
+    <!-- ================== HEADER =================== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Zejie Guo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="zejieguoAbout.html" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://docs.google.com/document/d/1OT2o5iM0b6FKhXc5eFepaO2QxJIC9aPW7l20oZ1DZos/edit#heading=h.ymi089liagec"
+                target="_blank"
+                class="nav__link"
+              >
+                <i class="uil uil-file nav__icon"></i> Resume
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================== MAIN =================== -->
+    <main class="main">
+      <!-- About -->
+      <section class="about section" id="design1">
+        <div class="design1__container container grid">
+          <div class="design__header">
+            <h1 class="design__name">Pokémon Recommender System Design</h1>
+            <span class="design__description"
+              >Pokémon Team Recommender System is a visual analytics tool that empower gamers make well-informed decisions about which Pokémon to include in their team based on their preferences.</span>
+          </div>
+          <div class="design1__img-home">
+            <img
+              src="assets/img/final_frontend_overview.png"
+              alt=""
+              class="design1__img"
+            />
+          </div>
+
+          <!-- Nested Model -->
+          <div class="design__content">
+            <h2 class="design__title">Project characterization</h2>
+            <!-- <p class="design__lists">Nested model</p> -->
+            <div class="design1__img-home">
+              <img
+                src="assets/img/nestedModel.png"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+          </div>
+
+
+          <!-- Task and Data -->
+          <div class="design__content">
+            <h2 class="design__title">Task and Data</h2>
+            <span class="design__lists"
+              >Our task is to design a web application that recommends a team of Pokémon based on user's preferences.
+            </span>
+            <!-- TARGET AUDIENCE -->
+            <div class="design__content grid">
+              <div>
+                <img src="assets/img/type_interaction.png" alt="" />
+              </div>
+              <div class="design__data">
+                <h2 class="design__subtitle">
+                Type interaction
+                </h2>
+                <p class="design__description">
+                  We added type interaction data to calculate the interaction score between two types. The type interaction score is
+                   based on the type chart in <a href="https://pokemondb.net/type" target="_blank">Pokémon Database </a>.
+              </div>
+            </div>
+          </div>
+
+          <!-- First Sketch -->
+          <div class="design__content">
+            <h2 class="design__title">First Sketch</h2>
+            <span class="design__description"
+              >We started with a simple sketch to get a sense of the layout and the interactions.</span>
+            <div class="design1__img-home">
+              <img
+                src="assets/img/PokeRecommenderDesign.png"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+          </div>
+
+          <!-- Design Iterations -->
+          <div class="design__content">
+            <h2 class="design__title">Design Iterations</h2>
+            <span class="design__description"
+              >We iterated our design based on the feedback from our peers and the instructor.</span>
+            <div class="design1__img-home">
+              <img
+                src="assets/img/second_iteration.jpg"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+            <span class="design__description"
+              >Then we start setting up the frontend and backend.</span>
+            <div class="design1__img-home">
+              <img
+                src="assets/img/firstVersionFrontend.jpg"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+          </div>
+
+
+          <!-- Peer Review -->
+          <div class="design__content">
+            <h2 class="design__title">Peer Review</h2>
+            <p class="design__lists">
+              In the peer review session we got several feedbacks from our colleagues and professor.
+            </p>
+            <ul>
+              <li class="design__lists">
+                <b>1. The color encoding is confusing</b>
+              </li>
+              <li class="design__lists">
+                <b>2. Not very clear on why the team was recommended to the user</b>
+              </li>
+              <li class="design__lists">
+                <b
+                  >3. The layout needs to be consistent with the user interaction steps when using the tool</b
+                >
+              </li>
+            </ul>
+            <!-- Improvement Design-->
+            <div class="design__content">
+              <h2 class="design__subtitle">Improving design based on feedbacks</h2>
+              <div class="design__screen-left grid">
+                <div style="padding-right: 2.5rem;" class="design__screen-img">
+                  <img src="assets/img/colorCoding.png" alt="" />
+                </div>
+                <div>
+                  <p class="design__description"
+                    ><ul>
+                      <li class="design__lists">
+                      <b
+                        >1. Color coding based on the Pokémon type</b
+                      >
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="design__screen-right grid">
+                <div>
+                  <p class="design__description"
+                    ><ul>
+                      <li class="design__lists">
+                        <b>2. Design a Pokémon card and highlight the most important stats for each Pokémon</b>
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+                <div style="padding-left: 2.5rem;" class="design__screen-img">
+                  <img src="assets/img/PokeCard.png" alt="" />
+                </div>
+              </div>
+              <div class="design__screen-left grid">
+                <div class="design__screen-img">
+                  <img src="assets/img/finaLayout.png" alt="" />
+                </div>
+                <div>
+                  <p class="design__description"
+                    ><ul>
+                      <li class="design__lists">
+                      <b
+                        >3. Final layout</b
+                      >
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <!-- Demo -->
+          <div class="design__content">
+            <h2 class="design__title">Demo</h2>
+            <span class="design__description"
+              > Our GitHub repository can be found <a
+                href="https://github.com/mwooll/ElTony/tree/main"
+                style="color: #e05790"
+                target="_blank"
+                ><u>here</u></a
+              >. Below are the key interactions of our tool:
+            </span>
+
+            <!-- interaction1 -->
+            <div class="design__content">
+            <h3 class="design__subtitle">Recommend a team based on user preferences</h3>
+            <span class="design__description"
+              >User can first filter Pokémon by type, legend and color. Then select the goal - the team's opponent type.</span>
+            <div class="design1__img-home">
+              <img
+                src="assets/img/RecommendATeam.gif"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+            <h3 class="design__subtitle">Swap Pokémon</h3>
+            <span class="design__description"
+              >After building the team, user can also swap the Pokémon to another one but with similar stats.</span>
+            <div class="design1__img-home">
+              <img
+                src="assets/img/SwapPokemon.gif"
+                alt=""
+                class="design1__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================== FOOTER =================== -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Zejie</h1>
+            <span class="footer__subtitle">Digital Product Designer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="index.html#design" class="footer__link">Design</a>
+            </li>
+            <li>
+              <a href="index.html#illustration" class="footer__link"
+                >Illustrarion</a
+              >
+            </li>
+            <li>
+              <a href="index.html#contact" class="footer__link"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-github-alt"></i>
+            </a>
+            <a href="" target="_blank" class="footer__social">
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2023 ZEJIE GUO DESIGN</p>
+      </div>
+    </footer>
+
+    <!-- ================== SCROLL TOP =================== -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!-- ================== MAIN JS =================== -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
