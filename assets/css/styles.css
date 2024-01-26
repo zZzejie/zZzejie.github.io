@@ -416,14 +416,6 @@ img {
 }
 
 /*==================== ABOUT ====================*/
-.about__img {
-  width: 450px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
-}
 
 .about__content {
   grid-template-columns: 0.5fr 3fr;
@@ -913,6 +905,16 @@ img {
 .design1__container {
   gap: 1rem;
 }
+.design4__img-home {
+  width: 100%; /* Set the width to 100% to make it fill the container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 800px; /* Set a maximum width to prevent the image from becoming too large */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .design1__img-home {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -965,6 +967,13 @@ img {
 }
 
 .design__subcontent {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: var(--mb-1-5);
+  padding-bottom: var(--mb-1-5);
+  align-items: center;
+}
+
+.design__subsubcontent {
   grid-template-columns: 0.5fr 3fr;
   padding-top: var(--mb-1-5);
   padding-bottom: var(--mb-1-5);
@@ -1311,6 +1320,12 @@ img {
     align-items: center;
   }
 
+  .design__subsubcontent,
+  .grid {
+    grid-template-rows: max-content;
+    align-items: center;
+  }
+
   .design__img-home {
     width: 360px;
   }
@@ -1322,6 +1337,7 @@ img {
 
   .design__content,
   .design__subcontent,
+  .design__subsubcontent,
   .illustration__container,
   .design__content-interview1,
   .design__content-interview2,
@@ -1403,12 +1419,19 @@ img {
     align-items: center;
   }
 
+  .design__subsubcontent,
+  .grid {
+    grid-template-rows: max-content;
+    align-items: center;
+  }
+
   .design__img-home {
     width: 360px;
   }
 
   .design__content,
   .design__subcontent,
+  .design__subsubcontent,
   .illustration__container,
   .design__screen-left,
   .design__screen-right {
@@ -1447,7 +1470,11 @@ img {
   .illustration__container,
   .contact__container,
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.75fr);
+  }
+
+  .design__subsubcontent {
+    grid-template-columns: repeat(3, 1.5fr);
   }
 
   .design__screen-left {
@@ -1539,9 +1566,6 @@ img {
 
   .about__container {
     column-gap: 3rem;
-  }
-  .about__img {
-    width: 350px;
   }
   .about__description {
     text-align: initial;
@@ -1638,6 +1662,10 @@ img {
 
   .design__subcontent {
     column-gap: 5rem;
+  }
+
+  .design__subsubcontent {
+    column-gap: 2.5rem;
   }
 
   .contact__form {
